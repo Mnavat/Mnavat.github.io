@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--AOS animation for scrolling-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div class="navigationbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/github-mark-white.svg"
+              alt="Logo"
+              width="27"
+              height="27"
+              class="d-inline-block align-text-top"
+            />
+            Mnavat
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#titlehome"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#titleprojects">My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#titleskills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#titlecontact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bg home" id="titlehome"></div>
+    <div class="bg-text-container">
+      <h1>MIGUEL NAVA</h1>
+      <p>Hello! Welcome to my portfolio!</p>
+      <p>My name is Miguel Nava, I am a biomedical engineer and a Jr Front End developer, I studied at the Instituto Politécnico Nacional and nowadays I am studying online courses oriented to the Tech industry, to perfect my skills within web development.</p>
+      <p>I consider myself a creative and fast learning person, with good mathematical logical thinking. In my professional experience I have also been described as a kind person, who knows 
+        how to work as a team and with good communication skills, but above all a resilient person who knows how to adapt 
+        to the different situations that arise in order to obtain the expected results always seeking customer satisfaction.</p>
+    </div>
+    <div class="mytitles" id="titleprojects">
+      <h2>My Projects</h2>
+    </div>
+
+    <section
+      class="container custom-section"
+      data-aos="fade-up"
+      data-aos-duration="400"
+      data-aos-offset="300"
+    >
+      <div class="row">
+        <div class="cb col-md">
+          <p class="card-text">
+            This first project is the structure of a personal blog, it used only JavaScript, HTML and CSS, 
+            in addition, on the code, is integrated jQuery to select elements of the DOM and some plugins such 
+            as image carousels and the accordion that you will see when exploring the web application, 
+            along with some libraries such as moment for the clock section of it. It also has 2 forms 
+            the first one: identification, that saves the data in the LocalStorage of the web browser and the 
+            second: contact, which is a form with validation.
+          </p>
+          <div class="row">
+            <div class="col-md">
+              <a href="https://blogmvnt.netlify.app/home" class="btn btn-dark" target="_blank">Website</a>
+            </div>
+            <div class="col-md">
+              <a href="https://github.com/Mnavat/Jsproject" class="btn btn-dark" target="_blank">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <img src="./img/proyectojs.jpg" class="card-img-top" alt="..." />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container custom-section"
+      data-aos="fade-up"
+      data-aos-duration="400"
+      data-aos-offset="250"
+    >
+      <div class="row">
+        <div class="col-md">
+          <img src="./img/webodontoped.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="cb col-md">
+          <p class="card-text">
+            Web page prototype created with the Angular framework in collaboration with André Nava, 
+            this project uses HTML, CSS and TypeScript. It implements some angular directives such as ngModel 
+            (for two-way bingind), ngForm, ngClass, etc. Additionally, the angular routing and httpClient 
+            libraries are integrated to make the components network  and requests to a NoSQL database created in MongoDB through a 
+            backend API with the help of the express and mongoose libraries.</p>
+          <p class="card-text">  
+            Note: The rendering of this page is intended only to be displayed in a web browser on a computer. 
+            The web page added to this portfolio shows only the interface, the connection to the database is 
+            not currently integrated (for more details of the back-end API check the repository on GitHub).
+          </p>
+          <div class="row">
+            <div class="col-md">
+              <a href="https://webodontoped.netlify.app/" class="btn btn-dark" target="_blank">Website</a>
+            </div>
+            <div class="col-md">
+              <a href="https://github.com/Mnavat/proyecto-odontopediatria" class="btn btn-dark" target="_blank">Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container custom-section"
+      data-aos="fade-up"
+      data-aos-duration="400"
+      data-aos-offset="250"
+    >
+      <div class="row">
+        <div class="cb col-md">
+          <p class="card-text">
+            On this website we can find an expense tracker, the development of this was done with React 
+            framework. It consists of 3 sections add expense, filter by year (with graphs for each month) and the list 
+            of expenses detail list according to the filter. Within this project we can find eventListeners 
+            and React hooks (such as useState), passing state data  and lifting up the state between components via 
+            props, as well as rendering and dynamic stylization with JSX, JS and CSS.
+          </p>
+          <div class="row">
+            <div class="col-md">
+              <a href="https://expensestrackermvnt.netlify.app/" class="btn btn-dark" target="_blank">Website</a>
+            </div>
+            <div class="col-md">
+              <a href="https://github.com/Mnavat/ReactExpenses" class="btn btn-dark" target="_blank">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <img src="./img/expensestracker.jpg" class="card-img-top" alt="..." />
+        </div>
+      </div>
+    </section>
+
+    <div class="mytitles" id="titleskills">
+      <h2>My Skills</h2>
+    </div>
+    <div id="Skills">
+      <div class="row rowskills" data-aos="zoom-in" data-aos-duration="400">
+        <div class="col-md">
+          <img class="skillimage" src="img/HTML.png" />
+          <h3 class="skillname">HTML 5</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/CSS.png" />
+          <h3 class="skillname">CSS 3</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/JS.png" />
+          <h3 class="skillname">JavaScript</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/React.png" />
+          <h3 class="skillname">React</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Angular.png" />
+          <h3 class="skillname">Angular</h3>
+        </div>
+      </div>
+
+      <div class="row rowskills" data-aos="zoom-in" data-aos-duration="400">
+        <div class="col-md">
+          <img class="skillimage" src="img/TS.png" />
+          <h3 class="skillname">Typescript</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Bootstrap_logo.svg.png" />
+          <h3 class="skillname">Bootstrap</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/jQuery.png" />
+          <h3 class="skillname">jQuery</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/MongoDB.png" />
+          <h3 class="skillname">MongoDB</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Node.png" />
+          <h3 class="skillname">Node.js</h3>
+        </div>
+      </div>
+
+      <div class="row rowskills" data-aos="zoom-in" data-aos-duration="400">
+        <div class="col-md">
+          <img class="skillimage" src="img/Expressjs.png" />
+          <h3 class="skillname">Express</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Postman.png" />
+          <h3 class="skillname">Postman</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Git.png" />
+          <h3 class="skillname">Git</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Github.png" />
+          <h3 class="skillname">GitHub</h3>
+        </div>
+        <div class="col-md">
+          <img class="skillimage" src="img/Python-logo-notext.svg.png" />
+          <h3 class="skillname">Python</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="mytitles" id="titlecontact">
+      <h2>Contact</h2>
+    </div>
+
+    <section class="contact" data-aos="flip-left">
+      <div class="row rowswrapper">
+        <div class="col-md">
+          <img class="contactimage" src="img/contactop1.jpg" />
+        </div>
+        <div class="col-md">
+            <ul class="contactlist">
+                <li><img src="img/E-mail.png" style="width: 40px; padding-right: 5px;">mnavat96@gmail.com</li>
+                <li><img src="img/whatsapp-icon.png" style="width: 40px;padding-right: 5px;">+52 55 8099 1684</li>
+                <li><img src="img/Linkedin.png" style="width: 40px;padding-right: 5px;"><a href="https://www.linkedin.com/in/miguel-nava-0621/">LinkedIn</a></li>
+                <li><img src="img/github-mark-white.svg" style="width: 40px;padding-right: 5px;"><a href="https://github.com/Mnavat">GitHub</a></li>
+            </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Miguel Nava's Portfolio</p>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

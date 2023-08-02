@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.navigationbar {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+:root {
+  --main-color: white;
+}
+
+.home {
+  background-image: url(./img/homeop5_edited3.jpg);
+}
+
+.bg {
+  text-align: center;
+  padding: 10px;
+  height: 100vh;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+}
+.bg-text-container {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 40px;
+  border: 3px solid whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-family: "Rubik Mono One", sans-serif;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.bg-text-container p {
+  color: var(--main-color);
+  font-size: 20px;
+  font-family: "century gothic";
+}
+
+.custom-section {
+  padding-top: 30px;
+}
+
+.cb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-text {
+  font-family: Century gothic;
+  color: white;
+}
+
+.card-img-top {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+footer {
+  background-color: black;
+  padding: 10px 0;
+  color: var(--main-color);
+  margin-top: 40px;
+}
+
+.mytitles {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.rowskills {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+.skillimage {
+  width: 10rem;
+  height: 10rem;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.skillimage:hover {
+  transform: scale(1.1);
+}
+
+.skillname {
+  text-align: center;
+  padding-right: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactimage {
+  width: 17rem;
+  border-radius: 50%;
+}
+
+.contactlist {
+  padding: 10px;
+  list-style: none;
+  padding-top: 20%;
+}
+
+.contactlist li {
+  padding: 6px;
+  font-size: 18px;
+  color: white;
+}
+
+.contactlist a {
+  text-decoration: none;
+  color: white;
+}

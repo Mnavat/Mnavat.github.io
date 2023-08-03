@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-  --main-color: white;
+  --main-color: rgba(250, 250, 250, 0.8);
 }
 
 .home {
